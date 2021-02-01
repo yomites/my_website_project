@@ -2,12 +2,24 @@
   box-sizing: border-box; }
 
 body {
-  background: #270202;
-  color: #f8fafc;
+  background: #09090a;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100;
+      background: rgba(9, 9, 10, 0.9); }
 
 h1,
 h2,
@@ -23,7 +35,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(49, 2, 2, 0.5); }
+    background: rgba(14, 14, 15, 0.5); }
 
 a {
   color: #fff;
@@ -35,7 +47,19 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #3fb690; }
+  color: #12eea1; }
 
 main {
-  padding: 4rem; }
+  padding: 4rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #12eea1;
+        transition: all 0.5s ease-in-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
