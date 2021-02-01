@@ -1,3 +1,35 @@
+.menu-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: #09090a;
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  text-transform: uppercase;
+  width: 7rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+  .menu-btn .menubtn {
+    padding-left: 0;
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 1; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 3px 1px 4px 1px;
+    padding-right: 1rem;
+    background: #fff;
+    transition: all 0.5s ease-in-out; }
+  .menu-btn:hover {
+    background: #12eea1;
+    transition: all 0.5s ease-in-out; }
+
 * {
   box-sizing: border-box; }
 

@@ -1,0 +1,39 @@
+// menu Button
+.menu-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: $primary-color;
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  text-transform: uppercase;
+  width: 7rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  @include easeInOut;
+
+  .menubtn {
+    padding-left: 0;
+    font-weight: bold;
+    font-size: x-large;
+    line-height: 1;
+  }
+
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 3px 1px 4px 1px;
+    padding-right: 1rem;
+    background: #fff;
+    @include easeInOut;
+  }
+
+  &:hover {
+    background: $secondary-color;
+    @include easeInOut();
+  }
+}
