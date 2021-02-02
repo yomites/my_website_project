@@ -40,6 +40,9 @@
 
   // Rotate Into X With Menu Lines
   &.close {
+    .menu-text {
+      visibility: hidden;
+    }
     .btn-line {
       transform: rotate(180deg);
 

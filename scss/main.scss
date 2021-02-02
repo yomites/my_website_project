@@ -72,3 +72,17 @@ main {
     }
   }
 }
+
+#footer {
+  background: $primary-color;
+  color: #fff;
+  height: 7.5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    height: 7.5rem;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
