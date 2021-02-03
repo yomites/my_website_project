@@ -3,4 +3,4 @@ Install or download the project from github. Open the folder containing the proj
 file and right click on it selecting run withlive server. This should 
 start the project on the local server.
 
-The link to my exercise project is github.com/yomites/modern_portfolio
+
