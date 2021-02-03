@@ -266,8 +266,8 @@ main {
 
 .projects {
   display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -298,18 +298,31 @@ main {
 #contact-form button[type="submit"] {
   width: 30%; }
 
-#contact-b .contact-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center; }
-
-#contact-c h1 {
-  text-align: center;
-  font-size: 4rem; }
-
 #footer {
   text-align: center;
   padding: 1rem;
   background: #09090a;
   color: #fff;
   height: 60px; }
+
+@media (max-width: 500px) {
+  #contact-form .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  #home h1,
+  #about h1,
+  #work h1 {
+    font-size: 3rem; }
+  #contact-form h3 {
+    font-size: 3.5rem; }
+  #work .projects {
+    grid-template-columns: 1fr; }
+  #about-b .remarks {
+    grid-template-columns: 1fr;
+    background: rgba(9, 9, 10, 0.7); }
+  .section-title {
+    font-size: 1.5rem; } }
+
+@media (min-width: 501px) and (max-width: 768px) {
+  #about-b .remarks {
+    grid-template-columns: repeat(2, 1fr);
+    background: rgba(9, 9, 10, 0.7); } }
