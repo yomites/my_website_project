@@ -24,10 +24,6 @@ a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #12eea1; }
 
-.p-heading {
-  font-size: 1.3rem;
-  margin-bottom: 2rem; }
-
 .bg-primary {
   background: #09090a;
   color: #fff; }
@@ -43,6 +39,18 @@ input[class^="btn-"]:hover {
 .bg-medium {
   background: #ddd;
   color: #000; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.p-heading {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
 
 .text-center {
   text-align: center; }
@@ -223,6 +231,37 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+#about-a .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #09090a;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-a .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #f4f4f4; }
+
+#about-b .remarks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem; }
+  #about-b .remarks ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  #about-b .remarks p {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  #about-b .remarks img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
 
 #contact-form .text-fields {
   display: grid;
