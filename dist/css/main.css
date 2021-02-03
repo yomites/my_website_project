@@ -9,7 +9,8 @@
   padding: 0.5rem;
   transition: all 0.5s;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 100%; }
 
 .btn-light {
   color: #333;
@@ -262,6 +263,18 @@ main {
     height: 50px;
     border-radius: 50%;
     margin-right: 0.5rem; }
+
+.projects {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.8;
+      border-color: #12eea1;
+      transition: all 0.5s ease-in-out; }
 
 #contact-form .text-fields {
   display: grid;

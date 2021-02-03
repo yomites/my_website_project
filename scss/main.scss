@@ -73,10 +73,8 @@ main {
   }
 }
 
-// About Sections
-// About A
 #about {
-  // About B
+  // About Section A
   &-a {
     .progress {
       overflow: hidden;
@@ -94,7 +92,7 @@ main {
     }
   }
 
-  // About D
+  // About Section B
   &-b {
     .remarks {
       display: grid;
@@ -120,6 +118,24 @@ main {
         border-radius: 50%;
         margin-right: 0.5rem;
       }
+    }
+  }
+}
+
+// Work/Projects
+.projects {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.8;
+      border-color: $secondary-color;
+      @include easeInOut;
     }
   }
 }
